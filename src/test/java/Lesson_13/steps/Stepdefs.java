@@ -1,17 +1,10 @@
 package Lesson_13.steps;
 
 import Lesson_13.Base.Base;
-import gherkin.ast.Examples;
-import gherkin.ast.Scenario;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import javax.lang.model.element.Name;
-
-import static org.junit.Assert.*;
 
 public class Stepdefs extends Base {
 

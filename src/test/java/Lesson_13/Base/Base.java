@@ -8,7 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
-import Lesson_13.pages.*;
+import pages.Login_Page;
+import pages.Meeting_Creation_Select_Record_Type_Modal;
+import pages.Meetings_Page;
 
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
