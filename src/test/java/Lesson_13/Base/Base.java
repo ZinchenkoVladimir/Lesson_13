@@ -29,7 +29,6 @@ public class Base {
     protected SoftAssert asserts = new SoftAssert();
     public static final Properties config = Config.loadProperties("src/main/resources/test.properties");
 
-
     protected Base() {
     }
 
