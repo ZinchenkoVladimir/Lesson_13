@@ -1,6 +1,5 @@
 package Lesson_13.steps;
 
-import Lesson_13.Base.Base;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,8 +7,9 @@ import io.cucumber.java.en.When;
 
 public class Stepdefs extends Base {
 
-    @Given("^open_login_page$")
+    @Given("open_login_page")
     public void open_login_page_c() throws Exception {
+        setUp();
         login_page
                 .open_login_page();
     }
@@ -36,5 +36,6 @@ public class Stepdefs extends Base {
     public void verify_home_page_c() throws Exception {
         login_page
                 .verify_home_page();
+        tearDown();
     }
 }

@@ -1,6 +1,6 @@
 package pages;
 
-import static Lesson_13.Base.Base.*;
+import static Lesson_13.steps.Base.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,13 +1,16 @@
-package Lesson_13.Base;
+package Lesson_13.steps;
 
 import Lesson_13.utils.Config;
 import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
+//import org.junit.After;
+//import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.asserts.SoftAssert;
+//import org.testng.annotations.AfterTest;
+//import org.testng.annotations.BeforeTest;
+//import org.testng.asserts.SoftAssert;
+//import org.testng.asserts.SoftAssert;
 import pages.Login_Page;
 import pages.Meeting_Creation_Select_Record_Type_Modal;
 import pages.Meetings_Page;
@@ -26,13 +29,13 @@ public class Base {
     protected pages.Home_Page home_page;
     protected Meetings_Page meetings_page;
     protected Meeting_Creation_Select_Record_Type_Modal meeting_creation_select_record_type_modal;
-    protected SoftAssert asserts = new SoftAssert();
-    public static final Properties config = Config.loadProperties("src/main/resources/test.properties");
+//    protected SoftAssert asserts = new SoftAssert();
+    public static final Properties config = Config.loadProperties("src/test/resources/test.properties");
 
     protected Base() {
     }
 
-    @BeforeTest
+//    @Before
     public void setUp() throws Exception {
 
 //        ChromeDriverManager.chromedriver().setup();
@@ -56,7 +59,7 @@ public class Base {
         meeting_creation_select_record_type_modal = new Meeting_Creation_Select_Record_Type_Modal(driver);
     }
 
-    @AfterTest
+//    @After
     public void tearDown() throws Exception {
         clearBrowserCookies();
         clearBrowserLocalStorage();
